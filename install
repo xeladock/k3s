@@ -8,3 +8,4 @@ curl -sfL https://get.k3s.io | K3S_URL=https://myserver:6443 K3S_TOKEN=mynodetok
 dashboard: https://github.com/kubernetes/dashboard/releases
 
 
+sudo k3s kubectl create -f dashboard.admin-user.yml -f dashboard.admin-user-role.yml
