@@ -1,0 +1,10 @@
+curl -sfL https://get.k3s.io | sh -
+
+
+To install on worker nodes and add them to the cluster, run the installation script with the K3S_URL and K3S_TOKEN environment variables. Here is an example showing how to join a worker node:
+
+curl -sfL https://get.k3s.io | K3S_URL=https://myserver:6443 K3S_TOKEN=mynodetoken sh -
+
+dashboard: https://github.com/kubernetes/dashboard/releases
+
+
